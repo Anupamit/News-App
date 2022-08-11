@@ -10,7 +10,7 @@ const Trendingnews = () => {
     }, [])
 
     const fetchNewsData =async()=>{
-        let apiurl=`https://newsapi.org/v2/top-headlines?country=in&apiKey=a6032d9eb72842d38085288bb97e6740`
+        let apiurl=`https://newsapi.org/v2/top-headlines?country=in&apiKey=??`
         let response=await fetch(apiurl);
         let responseJson= await response.json();
         if (responseJson.articles) {
